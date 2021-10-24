@@ -1,0 +1,7 @@
+heroku plugins:install heroku-cli-deploy
+
+cd /D D:\DEV\HanZu_workspace\HanZu_Web
+
+heroku war:deploy target/HanZu.war --app hanzu
+
+heroku open --app hanzu
