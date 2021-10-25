@@ -1,0 +1,1261 @@
+{
+	"info": {
+		"_postman_id": "471ff4fd-e576-4ece-a3e6-3a1f44b665bb",
+		"name": "Jobook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Utils",
+					"item": [
+						{
+							"name": "Ping",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/jobook/v1/util/ping",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"util",
+										"ping"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Profile",
+							"item": [
+								{
+									"name": "Fetch User Education",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/education?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"education"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Education",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"education\": [\r\n        {\r\n            \"name\": \"SSCC Batroun\",\r\n            \"degree\": \"90\",\r\n            \"domain\": \"IT\",\r\n            \"dateFrom\": \"2020-01-01\",\r\n            \"dateTo\": \"2021-02-01\"\r\n        },\r\n        {\r\n            \"name\": \"Saint Famille Batroun\",\r\n            \"degree\": \"90\",\r\n            \"domain\": \"IT\",\r\n            \"dateFrom\": \"2021-02-01\",\r\n            \"dateTo\": \"2022-07-01\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/education?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"education"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetch User Experience",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/experience?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"experience"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Experience",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"experience\": [\r\n        {\r\n            \"company\": \"Neorcha\",\r\n            \"title\": \"Software Engineer\",\r\n            \"dateFrom\": \"2021-01-01\",\r\n            \"dateTo\": \"2022-01-01\",\r\n            \"description\": \"description\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/experience?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"experience"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetch User Skills",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/skills?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"skills"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Skills",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"skills\": [\r\n        {\r\n            \"name\": \"test1\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/skills?userId=1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"skills"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Personal info",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"test\",\r\n    \"lastName\": \"test\",\r\n    \"email\": \"email\",\r\n    \"title\": \"title\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/user/personalInfo?userId=5",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"user",
+												"personalInfo"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8080/jobook/v1/user/?username=Hany&password=1234",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Hany"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Signup",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8080/jobook/v1/user/?username=Hany2&password=1234&email=hany.lb@hotmail.com&firstName=Hany&lastName=Abboud&title=Software Engineer",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Hany2"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										},
+										{
+											"key": "email",
+											"value": "hany.lb@hotmail.com"
+										},
+										{
+											"key": "firstName",
+											"value": "Hany"
+										},
+										{
+											"key": "lastName",
+											"value": "Abboud"
+										},
+										{
+											"key": "title",
+											"value": "Software Engineer"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch User",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8080/jobook/v1/user/?userId=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "Comment",
+							"item": [
+								{
+									"name": "Add Comment",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"content\": \"test\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/comment/?jobId=5&userId=10",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"comment",
+												""
+											],
+											"query": [
+												{
+													"key": "jobId",
+													"value": "5"
+												},
+												{
+													"key": "userId",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Comment",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"content\": \"test\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/jobook/v1/comment/?commentId=10",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"jobook",
+												"v1",
+												"comment",
+												""
+											],
+											"query": [
+												{
+													"key": "commentId",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetch By Enum",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sorts\": {\r\n        \"date\": {\r\n            \"newest\": true,\r\n            \"oldest\": false\r\n        },\r\n        \"name\": {\r\n            \"ascending\": false,\r\n            \"descending\": true\r\n        }\r\n    },\r\n    \"filters\": {\r\n        \"experience\": 1,\r\n        \"environment\": 1,\r\n        \"type\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/jobook/v1/job/?jobEnum=0&search=",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "jobEnum",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch By User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/jobook/v1/job/user?userId=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"job",
+										"user"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"jobEnum\": 1,\r\n\t\"userId\": 3,\r\n    \"type\": 1,\r\n    \"experience\": 1,\r\n    \"environment\": 1,\r\n\t\"title\": \"Backend Developer\",\r\n\t\"description\": \"description2\",\r\n\t\"salaryFrom\": 1001.0,\r\n\t\"salaryTo\": 2002.0,\r\n\t\"deadline\": \"2021-10-30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/jobook/v1/job/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"job",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/jobook/v1/job/?jobId=3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"jobook",
+										"v1",
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "jobId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Production",
+			"item": [
+				{
+					"name": "Utils",
+					"item": [
+						{
+							"name": "Ping",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/util/ping",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"util",
+										"ping"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Profile",
+							"item": [
+								{
+									"name": "Fetch User Education",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/education?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"education"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Education",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"education\": [\r\n        {\r\n            \"name\": \"SSCC Batroun\",\r\n            \"degree\": \"90\",\r\n            \"domain\": \"IT\",\r\n            \"dateFrom\": \"2020-01-01\",\r\n            \"dateTo\": \"2021-02-01\"\r\n        },\r\n        {\r\n            \"name\": \"Saint Famille Batroun\",\r\n            \"degree\": \"90\",\r\n            \"domain\": \"IT\",\r\n            \"dateFrom\": \"2021-02-01\",\r\n            \"dateTo\": \"2022-07-01\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/education?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"education"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetch User Experience",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/experience?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"experience"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Experience",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"experience\": [\r\n        {\r\n            \"company\": \"Neorcha\",\r\n            \"title\": \"Software Engineer\",\r\n            \"dateFrom\": \"2021-01-01\",\r\n            \"dateTo\": \"2022-01-01\",\r\n            \"description\": \"description\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/experience?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"experience"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetch User Skills",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/skills?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"skills"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Skills",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"skills\": [\r\n        {\r\n            \"name\": \"test1\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/skills?userId=1",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"skills"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update User Personal info",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"test\",\r\n    \"lastName\": \"test\",\r\n    \"email\": \"email\",\r\n    \"title\": \"title\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/user/personalInfo?userId=5",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"user",
+												"personalInfo"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/user/?username=Hany&password=1234",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Hany"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Signup",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/user/?username=Hany2&password=1234&email=hany.lb@hotmail.com&firstName=Hany&lastName=Abboud&title=Software Engineer",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Hany2"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										},
+										{
+											"key": "email",
+											"value": "hany.lb@hotmail.com"
+										},
+										{
+											"key": "firstName",
+											"value": "Hany"
+										},
+										{
+											"key": "lastName",
+											"value": "Abboud"
+										},
+										{
+											"key": "title",
+											"value": "Software Engineer"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch User",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/jobook/v1/user/?userId=1",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"jobook",
+										"v1",
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "Comment",
+							"item": [
+								{
+									"name": "Add Comment",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"content\": \"test\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/comment/?jobId=5&userId=10",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"comment",
+												""
+											],
+											"query": [
+												{
+													"key": "jobId",
+													"value": "5"
+												},
+												{
+													"key": "userId",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Comment",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"content\": \"test\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://c2jobook.herokuapp.com/v1/comment/?commentId=10",
+											"protocol": "https",
+											"host": [
+												"c2jobook",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"v1",
+												"comment",
+												""
+											],
+											"query": [
+												{
+													"key": "commentId",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetch By Enum",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sorts\": {\r\n        \"date\": {\r\n            \"newest\": true,\r\n            \"oldest\": false\r\n        },\r\n        \"name\": {\r\n            \"ascending\": false,\r\n            \"descending\": true\r\n        }\r\n    },\r\n    \"filters\": {\r\n        \"experience\": 1,\r\n        \"environment\": 1,\r\n        \"type\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/job/?jobEnum=0&search=",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "jobEnum",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch By User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/job/user?userId=10",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"job",
+										"user"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"jobEnum\": 1,\r\n\t\"userId\": 3,\r\n    \"type\": 1,\r\n    \"experience\": 1,\r\n    \"environment\": 1,\r\n\t\"title\": \"Backend Developer\",\r\n\t\"description\": \"description2\",\r\n\t\"salaryFrom\": 1001.0,\r\n\t\"salaryTo\": 2002.0,\r\n\t\"deadline\": \"2021-10-30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/job/",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"job",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://c2jobook.herokuapp.com/v1/job/?jobId=3",
+									"protocol": "https",
+									"host": [
+										"c2jobook",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"v1",
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "jobId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

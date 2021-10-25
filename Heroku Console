@@ -1,7 +1,7 @@
-heroku plugins:install heroku-cli-deploy
+## Commands to deploy on production after login
 
-cd /D D:\DEV\HanZu_workspace\HanZu_Web
+cd /D D:\DEV\Jobook_workspace\Projet_C2_Jobook
 
-heroku war:deploy target/HanZu.war --app hanzu
+heroku war:deploy target/jobook.war --app c2jobook
 
-heroku open --app hanzu
+heroku open --app c2jobook
